@@ -1,0 +1,8 @@
+{
+  "appId": "br.org.actmauriti.app",
+  "appName": "ACT Mauriti",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b35">
+  <meta name="description" content="Aplicativo oficial da Associação Cultural Thyago Mauriti. Cultura, arte, tradição e transformação social.">
+  <title>ACT Mauriti | Associação Cultural Thyago Mauriti</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="ACT Mauriti - início">
+      <img src="assets/logo.jpg" alt="Logomarca da Associação Cultural Thyago Mauriti" class="brand-mark">
+      <span><strong>ACT MAURITI</strong><small>Associação Cultural Thyago Mauriti</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Menu principal">
+      <a href="#inicio" class="active">Início</a>
+      <a href="#sobre">A associação</a>
+      <a href="#associar">Associe-se</a>
+      <a href="#acoes">Ações culturais</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">CULTURA • ARTE • IDENTIDADE</span>
+        <h1>A cultura transforma.<br><em>A nossa história inspira.</em></h1>
+        <p>Um espaço de valorização da arte, das tradições e de quem faz cultura em Mauriti.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#sobre">Conheça a associação</a>
+          <a class="btn btn-outline" href="#associar">Quero me associar</a>
+        </div>
+      </div>
+      <div class="hero-seal"><img src="assets/logo.jpg" alt="Logomarca oficial da Associação Cultural Thyago Mauriti"></div>
+    </section>
+
+    <section class="intro section" id="sobre">
+      <div class="section-kicker">QUEM SOMOS</div>
+      <div class="intro-grid">
+        <div>
+          <h2>Uma associação feita por quem acredita na força da cultura.</h2>
+        </div>
+        <div>
+          <p>A Associação Cultural Thyago Mauriti atua na valorização da cultura e no incentivo aos artistas e fazedores de cultura. Nosso propósito é fortalecer iniciativas, promover oportunidades e contribuir para que as expressões culturais de Mauriti continuem vivas e acessíveis.</p>
+          <p class="muted">Este texto é uma apresentação inicial e poderá ser ajustado pela associação.</p>
+        </div>
+      </div>
+      <div class="values">
+        <article><span>01</span><h3>Valorização</h3><p>Reconhecer artistas, grupos, saberes e tradições.</p></article>
+        <article><span>02</span><h3>Participação</h3><p>Ampliar a presença da comunidade na vida cultural.</p></article>
+        <article><span>03</span><h3>Oportunidade</h3><p>Incentivar projetos, formação e novas iniciativas.</p></article>
+      </div>
+    </section>
+
+    <section class="join section" id="associar">
+      <div class="join-copy">
+        <div class="section-kicker">FAÇA PARTE</div>
+        <h2>A cultura cresce quando caminhamos juntos.</h2>
+        <p>Preencha o formulário para manifestar seu interesse em fazer parte da Associação Cultural Thyago Mauriti. A equipe entrará em contato para orientar os próximos passos.</p>
+        <p class="muted small">O envio definitivo dependerá da configuração do banco de dados e da política de associação aprovada pela entidade.</p>
+      </div>
+      <form id="membershipForm" class="form-card">
+        <h3>Ficha de interesse</h3>
+        <label>Nome completo<input name="full_name" required autocomplete="name" placeholder="Seu nome completo"></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email" placeholder="voce@email.com"></label>
+        <label>Telefone / WhatsApp<input name="phone" required autocomplete="tel" placeholder="(88) 9xxxx-xxxx"></label>
+        <label>Cidade<input name="city" value="Mauriti - CE"></label>
+        <label>Área cultural de interesse
+          <select name="cultural_area" required>
+            <option value="">Selecione uma opção</option>
+            <option>Quadrilha junina e cultura popular</option><option>Música</option><option>Dança</option><option>Teatro</option><option>Artes visuais</option><option>Audiovisual</option><option>Artesanato e saberes tradicionais</option><option>Produção cultural</option><option>Outra</option>
+          </select>
+        </label>
+        <label class="consent"><input type="checkbox" name="consent" required><span>Autorizo o uso dos dados informados para contato sobre esta manifestação de interesse, conforme a política de privacidade da associação.</span></label>
+        <button class="btn btn-primary" type="submit">Enviar manifestação</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+        <p class="muted tiny">Não informe documentos pessoais nesta etapa. O formulário coleta apenas dados básicos de contato.</p>
+      </form>
+    </section>
+
+    <section class="section gallery-section" id="acoes">
+      <div class="section-heading">
+        <div><div class="section-kicker">REGISTROS</div><h2>Nossas ações culturais</h2></div>
+        <p>Um espaço para compartilhar oficinas, apresentações, encontros e atividades realizadas pela associação.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-placeholder"><span>FOTO 01</span><strong>Oficinas e formação</strong><small>Adicione uma fotografia da associação</small></div>
+        <div class="gallery-placeholder"><span>FOTO 02</span><strong>Apresentações culturais</strong><small>Adicione uma fotografia da associação</small></div>
+        <div class="gallery-placeholder"><span>FOTO 03</span><strong>Encontros e projetos</strong><small>Adicione uma fotografia da associação</small></div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projetos">
+      <div class="section-kicker">INICIATIVAS</div>
+      <h2>Projetos e oportunidades</h2>
+      <p class="project-intro">Divulgue aqui os projetos, editais, oficinas, apresentações e ações promovidos ou apoiados pela associação.</p>
+      <div class="project-note"><span>+</span><div><strong>Novos projetos em breve</strong><p>Esta área será alimentada com as iniciativas da ACT Mauriti.</p></div></div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div><div class="section-kicker light-kicker">FALE COM A GENTE</div><h2>Vamos fortalecer a cultura juntos?</h2><p>Entre em contato e acompanhe as atividades da associação.</p></div>
+      <div class="contact-links">
+        <a href="#" id="instagramLink">Instagram da associação <span>↗</span></a>
+        <a href="#" id="whatsappLink">WhatsApp <span>↗</span></a>
+        <small>Os links oficiais serão inseridos na próxima etapa.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">ACT <span>MAURITI</span></div><p>Associação Cultural Thyago Mauriti</p><small>© <span id="year"></span> • Cultura, arte e identidade.</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
